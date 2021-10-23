@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include">
+    <m2m_sp_dependency_css_include action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <sp_css_include display_value="font-awesome.min.css">6acd83001b5b3010b0935464604bcb25</sp_css_include>
+        <sp_dependency display_value="ngSanitize">792bb2801b1b3010b0935464604bcbf5</sp_dependency>
+        <sys_class_name>m2m_sp_dependency_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 03:55:22</sys_created_on>
+        <sys_id>aedd83001b5b3010b0935464604bcb53</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>font-awesome.min.css.ngSanitize</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>m2m_sp_dependency_css_include_aedd83001b5b3010b0935464604bcb53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:56:47</sys_updated_on>
+    </m2m_sp_dependency_css_include>
+</record_update>

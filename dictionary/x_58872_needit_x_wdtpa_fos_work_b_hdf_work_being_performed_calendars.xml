@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="HDF Events" max_length="40" name="x_58872_needit_x_wdtpa_fos_work_b_hdf_work_being_performed_calendars" sizeclass="2" type="collection">
+        <element label="Converted End Date" max_length="40" name="hdf_wbp_u_converted_end_date" type="string"/>
+        <element label="Converted Start Date" max_length="40" name="hdf_wbp_u_converted_start_date" type="string"/>
+        <element label="End Date" max_length="40" name="hdf_wbp_u_end_date" type="glide_date_time"/>
+        <element label="Source" max_length="32" name="hdf_wbp_u_source" reference="sc_req_item" type="reference"/>
+        <element label="Start Date" max_length="40" name="hdf_wbp_u_start_date" type="glide_date_time"/>
+        <element label="Status" max_length="40" name="hdf_wbp_u_status" type="string"/>
+        <element label="Title" max_length="120" name="hdf_wbp_u_title" type="string"/>
+        <element label="Work End DateTime" max_length="40" name="hdf_wbp_u_work_end_datetime" type="glide_date_time"/>
+        <element label="Work Start DateTime" max_length="40" name="hdf_wbp_u_work_start_datetime" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="hdf_wbp_u_source"/>
+        </index>
+    </element>
+</database>

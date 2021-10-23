@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
+        <order>300</order>
+        <sp_dependency display_value="angular-rich-text-diff">c38cfe801b1b3010b0935464604bcb1a</sp_dependency>
+        <sp_js_include display_value="angular-rich-text-diff.js">08dcb6c01b1b3010b0935464604bcb85</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 02:41:56</sys_created_on>
+        <sys_id>430db6c01b1b3010b0935464604bcbec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>angular-rich-text-diff.angular-rich-text-diff.js</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_430db6c01b1b3010b0935464604bcbec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:29:48</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+</record_update>

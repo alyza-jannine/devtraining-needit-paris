@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="DELETE">
+        <order>100</order>
+        <sp_dependency display_value="text-angular">7e028f841b1b3010b0935464604bcbe9</sp_dependency>
+        <sp_js_include display_value="http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js">19720fc41b1b3010b0935464604bcbf8</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 03:05:46</sys_created_on>
+        <sys_id>c0824fc41b1b3010b0935464604bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text-angular.http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_c0824fc41b1b3010b0935464604bcb5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:05:46</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>23eac0521bc4701032182f8dee4bcbec</instance_id>
+        <instance_name>dev115733</instance_name>
+        <name>m2m_sp_dependency_js_include_c0824fc41b1b3010b0935464604bcb5c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="text-angular">7e028f841b1b3010b0935464604bcbe9</sp_dependency><sp_js_include display_value="http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js">19720fc41b1b3010b0935464604bcbf8</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-15 03:05:46</sys_created_on><sys_id>c0824fc41b1b3010b0935464604bcb5c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>text-angular.http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c0824fc41b1b3010b0935464604bcb5c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-15 03:05:46</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+        <payload_hash>890843629</payload_hash>
+        <record_name>text-angular.http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js</record_name>
+        <reverted_from/>
+        <source>3f3245cd1b623010b0935464604bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 03:05:46</sys_created_on>
+        <sys_id>00824fc41b1b3010b0935464604bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c81e9a7e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:05:46</sys_updated_on>
+        <type>Dependency JS Includes</type>
+        <update_guid>48824fc42e1b3010fbb425a63a8d045d</update_guid>
+        <update_guid_history>48824fc42e1b3010fbb425a63a8d045d:890843629</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="text-angular.http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAn">372347081b1b3010b0935464604bcbd4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 03:08:45</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_dependency_js_include">m2m_sp_dependency_js_include</sys_db_object>
+        <sys_id>745e33aefaf5427ca56e1cc8086ed7a4</sys_id>
+        <sys_metadata>c0824fc41b1b3010b0935464604bcb5c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text-angular.http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.7/dist/textAngular-rangy.min.js</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>m2m_sp_dependency_js_include_c0824fc41b1b3010b0935464604bcb5c</sys_update_name>
+        <sys_update_version display_value="m2m_sp_dependency_js_include_c0824fc41b1b3010b0935464604bcb5c">00824fc41b1b3010b0935464604bcb5e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:08:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

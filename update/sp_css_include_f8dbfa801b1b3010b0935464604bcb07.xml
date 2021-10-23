@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>bootstrap.min.css</name>
+        <source>url</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 02:37:30</sys_created_on>
+        <sys_id>f8dbfa801b1b3010b0935464604bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bootstrap.min.css</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_css_include_f8dbfa801b1b3010b0935464604bcb07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 02:37:30</sys_updated_on>
+        <url>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css</url>
+    </sp_css_include>
+</record_update>

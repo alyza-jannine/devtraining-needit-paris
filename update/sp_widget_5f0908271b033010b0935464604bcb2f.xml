@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[//function($scope, spUtil, spModal, $location, spAriaFocusManager) {
+function($scope, spUtil, $location, $window) {
+	var c = this;
+	var tableName = c.data.tableName;
+	var tableFilter = '';
+	var formWidget = 'widget-form';
+
+
+	/* Edit event modal */
+	$scope.editEventModal = function(info) {
+		var widgetInput = {
+			'table': 'sc_req_item',
+			'sys_id': info.event.extendedProps.source
+		};
+
+		var widgetObj = {
+			"title": info.event.title,
+			"widget": formWidget,
+			"widgetInput": widgetInput
+		}
+
+		spModal.open(widgetObj);
+	}
+
+
+
+	// Create calendar
+	var calendarEl = document.getElementById('hdf_wbp_full_calendar');
+	var calendar = new FullCalendar.Calendar(calendarEl, {
+		themeSystem: 'bootstrap',
+		height: 'auto',
+		//timeZone: c.data.timezone,
+		timeZone: 'America/New_York',
+		//timeZone: 'HongKong',
+		//timeZone: 'Europe/Moscow',
+		eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' },
+		//eventTimeFormat: { hour: 'numeric', minute: '2-digit'},
+		initialView: 'dayGridMonth',
+		dayMaxEventRows: 4,
+		moreLinkClick: 'day',
+		navLinks: true,
+		nowIndicator: true,
+		headerToolbar: {
+			left: 'prevYear,prev,next,nextYear today',
+			center: 'title',
+			right: 'dayGridMonth,timeGridWeek,timeGridDay'
+		},
+		footerToolbar: {
+			left: 'prevYear,prev,next,nextYear today',
+			center: '',
+			right: 'listMonth,listWeek,listDay'
+		},
+		views: {
+			dayGridMonth: { buttonText: 'Month' },
+			timeGridWeek: { buttonText: 'Week' },
+			timeGridDay: { buttonText: 'Day' },
+			listMonth: { buttonText: 'List Month' },
+			listWeek: { buttonText: 'List Week' },
+			listDay: { buttonText: 'List Day' }
+		},
+		//events: c.data.events,
+		//events: 'https://fullcalendar.io/demo-events.json',
+		events: 'https://fullcalendar.io/demo-events.json?start=2021-10-01T00:00:00&end=2021-10-30T00:00:00',
+		eventTextColor: '#000000',
+		eventClick: function(info) {
+			$scope.editEventModal(info);
+		},
+		eventDidMount: function(info){
+			var eventState = info.event.extendedProps.state;
+			if(eventState) {
+				if(eventState == 'pending_approval') {
+					// Yellow
+					info.el.style.background = '#fcea8b';
+				}
+				else if(eventState == 'pending_fulfillment') {
+					// Green
+					info.el.style.background = '#93bd8c';
+				}
+				else if(eventState == 'complete') {
+					// Blue
+					info.el.style.background = '#6ABECF';
+				}
+				else {
+					// Yellow
+					info.el.style.background = '#fcea8b';
+				}
+			}
+		}
+	});
+
+	calendar.render();
+
+	spUtil.recordWatch($scope, tableName, c.data.query, function(name) {
+		c.server.get({
+			action: 'getCalendarEvents'
+		}).then(function(r){
+			calendar.removeAllEvents();
+			c.data.events = r.data.events;
+			calendar.addEventSource(c.data.events);
+		});
+
+		calendar.refetchEvents();
+
+
+	});
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.fc-daygrid-event-harness {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#top {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#loading {
+  display: none;
+}
+
+#calendar {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+.tzo {
+  color: #000;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>hdf_wbp_full_calendar</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>hdf_wbp_full_calendar</name>
+        <option_schema>[{"hint":"Table name","name":"table","section":"Data","label":"Table","type":"string"},{"hint":"Use encoded query","name":"query","section":"Data","label":"Query","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.events = getCalendarEvents();
+})();
+
+
+function getCalendarEvents() {
+	data.events = [];
+	data.timezone = gs.getSession().getTimeZoneName();
+
+	// Set defaults
+	data.tableName = 'x_58872_needit_x_wdtpa_fos_work_b_hdf_work_being_performed_calendars';
+	var titleColumnName = 'hdf_wbp_u_title';
+	//var startDateColumnName = 'hdf_wbp_u_start_date';
+	var startDateColumnName = 'hdf_wbp_u_converted_start_date';
+	//var startDateColumnName = 'hdf_wbp_u_work_start_datetime';
+	//var endDateColumnName = 'hdf_wbp_u_end_date';
+	var endDateColumnName = 'hdf_wbp_u_converted_end_date';
+	//var endDateColumnName = 'hdf_wbp_u_work_end_datetime';
+	var stateColumnName = 'hdf_wbp_u_status';
+	var sourceColumnName = 'hdf_wbp_u_source';
+
+	// Check if there is an option schema value for the table
+	if(options.table){
+		data.tableName = options.table;
+	}
+
+
+	var gr = new GlideRecord(data.tableName);
+
+	// Check if there is query option
+	if(options.query){
+		data.query = options.query;
+		gr.addEncodedQuery(options.query);
+	}
+
+	gr.query();
+
+	while(gr.next()) {
+		var eventJSON = {};
+		eventJSON.id = gr.getValue('sys_id');
+		eventJSON.title = gr.getDisplayValue(titleColumnName);
+		eventJSON.start = gr.getValue(startDateColumnName);
+		eventJSON.end = gr.getValue(endDateColumnName);
+		eventJSON.state = gr.getDisplayValue(stateColumnName);
+		eventJSON.source = gr.getValue(sourceColumnName);
+
+		data.events.push(eventJSON);
+	}
+
+	return data.events;
+}
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 00:20:39</sys_created_on>
+        <sys_id>5f0908271b033010b0935464604bcb2f</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>hdf_wbp_full_calendar</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_5f0908271b033010b0935464604bcb2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 06:39:24</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="calendar" id="hdf_wbp_full_calendar"></div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

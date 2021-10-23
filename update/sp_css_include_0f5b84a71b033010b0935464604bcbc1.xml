@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>hdf_wbp_fontawesome-free_5.13.1.css</name>
+        <source>url</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 00:28:52</sys_created_on>
+        <sys_id>0f5b84a71b033010b0935464604bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hdf_wbp_fontawesome-free_5.13.1.css</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_css_include_0f5b84a71b033010b0935464604bcbc1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-13 00:28:52</sys_updated_on>
+        <url>https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css</url>
+    </sp_css_include>
+</record_update>

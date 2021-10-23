@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="DELETE">
+        <display_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</display_name>
+        <source>url</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-18 06:12:48</sys_created_on>
+        <sys_id>5f0ac3811b133010b0935464604bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_ui_script/>
+        <sys_update_name>sp_js_include_5f0ac3811b133010b0935464604bcb54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 06:12:48</sys_updated_on>
+        <url>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</url>
+    </sp_js_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>23eac0521bc4701032182f8dee4bcbec</instance_id>
+        <instance_name>dev115733</instance_name>
+        <name>sp_js_include_5f0ac3811b133010b0935464604bcb54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</display_name><source>url</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-18 06:12:48</sys_created_on><sys_id>5f0ac3811b133010b0935464604bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_ui_script/><sys_update_name>sp_js_include_5f0ac3811b133010b0935464604bcb54</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-18 06:12:48</sys_updated_on><url>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</url></sp_js_include></record_update>]]></payload>
+        <payload_hash>176340117</payload_hash>
+        <record_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</record_name>
+        <reverted_from/>
+        <source>3f3245cd1b623010b0935464604bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-18 06:12:48</sys_created_on>
+        <sys_id>191ac3811b133010b0935464604bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c9207f8f20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 06:12:48</sys_updated_on>
+        <type>JS Include</type>
+        <update_guid>511ac3815d133010622b60edb00423b5</update_guid>
+        <update_guid_history>511ac3815d133010622b60edb00423b5:176340117</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js">c04b83c11b133010b0935464604bcbba</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-18 06:17:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_js_include">sp_js_include</sys_db_object>
+        <sys_id>9ebb2f6587bc4a62af499f3b9616b649</sys_id>
+        <sys_metadata>5f0ac3811b133010b0935464604bcb54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sp_js_include_5f0ac3811b133010b0935464604bcb54</sys_update_name>
+        <sys_update_version display_value="sp_js_include_5f0ac3811b133010b0935464604bcb54">191ac3811b133010b0935464604bcbb5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 06:17:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

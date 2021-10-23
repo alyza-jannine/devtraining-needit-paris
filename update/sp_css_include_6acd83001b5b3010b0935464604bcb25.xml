@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>font-awesome.min.css</name>
+        <source>url</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 03:55:22</sys_created_on>
+        <sys_id>6acd83001b5b3010b0935464604bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>font-awesome.min.css</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_css_include_6acd83001b5b3010b0935464604bcb25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 03:55:22</sys_updated_on>
+        <url>https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css</url>
+    </sp_css_include>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+	var c = this;
+	//$scope.name = 'World';
+	$scope.name = c.data.test;
+	
+	$scope.richText1 = '<p>This is the old procedure.</p><ol><li>One</li><li>Two</li></ol>';
+	$scope.richText2 = '<p>This is the new better procedure text</p><ol><li>One</li><li>Two</li><li>Three</li></ol>';
+	
+	//$scope.richText1 = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ol><li>One</li><li>Two</li></ol>';
+	//$scope.richText2 = '<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id laborum.</p><ol><li>One</li><li>Two</li><li>Three</li></ol>';
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Put your css in here */
+
+ins, ins &gt; * {
+	color: black;
+	background: #bbffbb !important;
+}
+
+del, del &gt; * {
+	color: black;
+	background: #ffbbbb !important;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>hdf_crf_editor</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>hdf_crf_editor</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.test = 'EYYYYYYY';
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 02:23:41</sys_created_on>
+        <sys_id>23d83a001b1b3010b0935464604bcb1c</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>hdf_crf_editor</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_23d83a001b1b3010b0935464604bcb1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 17:04:07</sys_updated_on>
+        <template><![CDATA[
+<p ng-if="name">Hello {{name}}!</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">Left</div>
+  <div class="panel-body">
+    <text-angular ng-model="richText1"></text-angular>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">Right</div>
+  <div class="panel-body">
+    <text-angular ng-model="richText2"></text-angular>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">Diff</div>
+  <div class="panel-body">
+    <rich-text-diff left="richText1" right="richText2"></rich-text-diff>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
